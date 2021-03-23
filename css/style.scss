@@ -188,6 +188,9 @@ img{
 body{
     font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
 }
+input:focus{ 
+    outline: none; 
+}
 .nav-wrapper-pc{
     display: none;
 }
@@ -528,11 +531,13 @@ body{
         }
     }
     .footer{
-        padding: 50px;
         .footer-flexbox{
             justify-content:space-around;
             align-items:stretch;
             flex-direction:row;
+            max-width:550px;
+            margin-left:auto;
+            margin-right:auto;
         }
         li{
             padding-bottom: 40px;
@@ -541,7 +546,7 @@ body{
 }
 @media screen and (min-width:1024px) { 
     .header-flexbox{
-        max-width:1000px;
+        max-width:1100px;
         margin-left:auto;
         margin-right:auto;
     }
@@ -555,12 +560,16 @@ body{
     .slick-slide img {
         height: 550px;
     }
+    .news{
+        &__flexbox{
+            max-width:1100px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+    .store-information-flexbox {
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
-
-
-
-
-
-
-
-
