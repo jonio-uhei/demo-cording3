@@ -699,9 +699,6 @@ body {
     font-size: 28px;
     line-height: 1em;
   }
-  .footer {
-    padding: 50px;
-  }
   .footer .footer-flexbox {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -712,6 +709,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer li {
     padding-bottom: 40px;
@@ -720,7 +720,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .header-flexbox {
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -734,5 +734,19 @@ body {
   .slick-slide img {
     height: 550px;
   }
+  .news__flexbox {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .store-information-flexbox {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
